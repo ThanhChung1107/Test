@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    top: 0;
+    width: 100%;
+    display: block;
+    align-items: center;
+    border-bottom: 8px solid red;
+    position: fixed;
+    margin-bottom: 20px;
+    background-color: aqua;
+}
+
+.header .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(168, 46, 9);
+    margin-top: 10px;
+}
+.title .bx {
+    font-size: 30px;
+    color: rgb(31, 133, 11);
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.nav a{
+    text-decoration: none;
+    color: #000;
+}
+.nav a:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.general {
+    scroll-margin-top: 150px;
+    padding: 20px;
+    width: 60%;
+    height: 80vh;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+
+}
+.experience-section{
+    margin-top: 150px;
+}
+.experience-section .experience-card {
+    width: 500px;
+    height: 500px;
+    background: url(tn.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.experience-section .paragraph {
+    padding-right: 100px;
+    font-size: 25px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.paragraph h2 {
+    padding: 20px 0;
+    text-align: center;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.paragraph button {
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: rgb(12, 153, 12);
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 
+        0 0 20px rgba(12, 153, 12, 0.8), /* Lớp bóng gần với nút */
+        0 0 30px rgba(12, 153, 12, 0.6), /* Lớp bóng thứ hai mờ hơn */
+        0 0 40px rgba(12, 153, 12, 0.4); /* Lớp bóng xa và mờ nhất */
+    transition: box-shadow 0.3s ease;
+}
+
+.paragraph p {
+    margin: 30px 0;
+    color: rgb(175, 91, 22);
+    font-style:italic ;
+}
+.paragraph button:hover {
+    color: #000;
+}
+
+.career-library  {
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.career-library h3 {
+    font-size: 30px;
+    background-color: #79adab;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(5, 1, 0);
+}
+
+.career-library {
+    width: 60%;
+    height: 100vh;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 10px;
+    margin: 0 auto;
+    background-color: #b2e2e1;
+}
+
+.career-library .library-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.career-library .career-item .career-img {
+    width: 180px;  
+    height: 180px; 
+    border-radius: 50%;  
+    border: 4px solid red; 
+    margin: 5px 70px 20px;
+}
+.career-item {
+    margin: 30px;
+}
+.career-item p {
+    padding-left: 30px;
+    font-weight: 700;
+}
+.career-library button {
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(to right,red,orange);
+    color: #fff;
+}
+
+.career-library button:hover {
+    color: #000;
+}
+
+.admission-info {
+    display: block;
+    height: 60vh;
+}
+
+.admission-info h3 {
+    text-align: center;
+    font-size: 40px;
+}
+.admission-info .university-info {
+    margin: 40px 0;
+    font-size: 30px;
+}
+
+.admission-info .university-info a {
+    text-decoration: none;
+    color: #000;
+}
+
+.admission-info .university-info a:hover {
+    color: blue;
+}
+
+.contact {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,rgb(85, 78, 78),rgb(74, 74, 133));
+    color: #c9bcbc;
+}
+
+.contact .contact-info {
+    margin-top: 20px;
+}
+
+.contact .contact-info p {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.contact .contact-address {
+    margin-top: 20px;
+}
+.contact-address .name {
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 60, 0);
+    margin-bottom: 40px;
+}
+.name .bx {
+    margin:10px 10px 0 0;
+    color: rgb(9, 165, 9);
+}
+
+.contact-address p {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.contact-address span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-internet {
+    margin: auto 0;
+}
+
+.contact-internet h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.contact-internet .input {
+    font-size: 20px;
+    padding: 8px 16px ;
+    border-radius: 8px;
+}
+.contact-internet .submit {
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgb(18, 32, 110),rgb(79, 146, 223));
+    color: #fff;
+}
+.submit:hover {
+    color: #000;
+}
+
+.contact-internet .icon {
+
+    margin: 30px 0;
+    font-size: 40px;
+}
+.icon .bx {
+    position: relative;
+    padding: 0 18px;
+}
+.icon a {
+    color: #c9bcbc;
+}
+.bx:hover {
+    color: #fff;
+}
+
+.bxl-facebook-circle:hover::after, 
+.bxl-tiktok:hover::after,
+ .bxl-github:hover::after, 
+ .bxl-instagram:hover::after{
+    position: absolute;
+    bottom: 100%; /* Hiển thị phía trên icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+}
+
+.bxl-facebook-circle:hover::after {
+    content: "Theo dõi chúng tôi trên Facebook!";
+}
+.bxl-tiktok:hover::after {
+    content: "Theo dõi chúng tôi trên tiktok";
+}
+.bxl-github:hover::after{
+    content: "Xem source code tại github";
+}
+.bxl-instagram:hover::after {
+    content: "Theo dõi chúng tôi trên instagram";
+    left: 0;
+}
+
+.map {
+    background: url(map.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
